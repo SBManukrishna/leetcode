@@ -18,7 +18,6 @@ class Solution:
 
         preorder(p,res1)
         preorder(q,res2)
-        print(res1,res2)
         if(res1==res2):
             return True
         return False    

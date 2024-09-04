@@ -3,14 +3,7 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        # res=[nums[0]]
-        # curr=0
-        # for i in range(1,len(nums)):
-        #     if(nums[i]>res[curr]):
-        #         res.append(nums[i])
-        #         curr+=1
         c0,c1,c2=0,0,0
-        # dict1={0:0,1:0,2:0}
         for i in range(len(nums)):
             match nums[i]:
                 case 0:

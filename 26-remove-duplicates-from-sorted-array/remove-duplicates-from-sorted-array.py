@@ -12,7 +12,6 @@ class Solution:
                 prev+=1
                 curr+=1
                 if(i==len(nums)-1):
-                    return curr
-        print(nums)            
+                    return curr            
             
         

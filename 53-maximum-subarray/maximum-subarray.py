@@ -7,8 +7,6 @@ class Solution:
             l=max(sum,l)
             if(sum<0):
                 sum=0
-                
-
         return l     
 
 

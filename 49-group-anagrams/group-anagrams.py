@@ -7,8 +7,6 @@ class Solution:
                 d[key]+=[i]
             else:
                 d[key]=[i] 
-        res=[]
-        for i in d:
-            res.append(list(d[i]))
-        return res          
+        return list(d.values())        
+                
         

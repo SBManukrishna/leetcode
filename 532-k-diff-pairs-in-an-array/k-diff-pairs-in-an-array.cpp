@@ -1,6 +1,9 @@
 class Solution {
 public:
     int findPairs(vector<int>& nums, int k) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+        
         vector<int> v;
         unordered_map<int, int> mp, unique;
         int counter = 0;
@@ -15,6 +18,8 @@ public:
             
             return counter;
         }
+
+
         for(int it: nums)
             unique[it] = 1;
         

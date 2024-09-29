@@ -22,6 +22,9 @@ public:
     }
 
     bool canJump(vector<int>& nums) {
+        ios::sync_with_stdio(0);
+        cin.tie(0);
+        cout.tie(0);
         n = nums.size();
         dp.resize(n, -1);
 

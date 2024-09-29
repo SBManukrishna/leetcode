@@ -4,23 +4,20 @@ public:
     int n;
 
     bool helper(vector<int>& nums, int index) {
-        if(index >= n - 1)
+        if(index == n - 1)
             return true;
+        
+        if(nums[index] == 0)
+            return false;
         
         if(dp[index] != -1)
             return dp[index];
     
-        bool  res = false;
+        for(int i = 1; i <= nums[index]; i++)
+            if(helper(nums, index + i))
+                return dp[index] = true;
 
-        for(int i = 1; i <= nums[index]; i++){
-            res = helper(nums, index + i);
-            dp[index] = res;
-            if(res)
-                break;
-        }
-
-        dp[index] = res;
-        return dp[index];
+        return dp[index] = false;
     }
 
     bool canJump(vector<int>& nums) {

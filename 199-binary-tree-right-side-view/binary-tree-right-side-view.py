@@ -14,7 +14,7 @@ class Solution:
     
         while q:
             q2 = deque()
-            rightMost = 101
+
             while q:
                 node = q.popleft() 
                 rightMost = node.val

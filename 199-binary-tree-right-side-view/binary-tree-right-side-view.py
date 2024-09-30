@@ -14,16 +14,16 @@ class Solution:
     
         while q:
             q2 = deque()
-            level = []
+            rightMost = 101
             while q:
                 node = q.popleft() 
-                level.append(node.val)
+                rightMost = node.val
                 if node.left:
                     q2.append(node.left)
                 if node.right:
                     q2.append(node.right)
 
-            res.append(level[-1])
+            res.append(rightMost)
             q=q2
 
         return res

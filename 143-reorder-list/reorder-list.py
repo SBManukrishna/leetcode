@@ -20,10 +20,6 @@ class Solution:
             ptr=ptr.next
         half.reverse() 
         slow.next=None  
-
-        print(head)
-        print(half)
-
         seeker=head
         i=0
         while(i<len(half)):

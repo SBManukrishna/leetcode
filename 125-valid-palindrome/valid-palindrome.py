@@ -4,7 +4,8 @@ class Solution:
         for i in s:
             if i.isalnum()==True:
                 d+=i.lower()
-        for i in range(len(d)//2):             
+        n=len(d)//2        
+        for i in range(n):             
             if d[i]!=d[-1-i]:
                 return False
         return True    

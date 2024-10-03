@@ -1,5 +1,7 @@
 class Solution:
     def targetIndices(self, nums: List[int], target: int) -> List[int]:
+        if target not in nums:
+            return []
         nums.sort()
         d={}
         index=0
@@ -9,6 +11,4 @@ class Solution:
             else:
                 d[i]=[index]
             index+=1    
-        if target not in nums:
-            return []
         return d[target]

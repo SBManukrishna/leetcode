@@ -38,7 +38,3 @@ class Solution:
                 q=que  
     
         return res       
-
-
-
-        

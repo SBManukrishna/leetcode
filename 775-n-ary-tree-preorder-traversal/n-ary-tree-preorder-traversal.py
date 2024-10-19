@@ -13,8 +13,8 @@ class Solution:
             if root==None:
                 return
             res.append(root.val)
-            for i in range(len(root.children)):
-                helper(root.children[i])
+            for i in root.children:
+                helper(i)
         helper(root)        
         return res       
 
